@@ -267,6 +267,20 @@
     margin:0 7px;
   }
 
+  .powered-by{
+    font-size:clamp(10px, 2.6vw, 11px);
+    letter-spacing:0.4px;
+    color:var(--muted);
+    opacity:0.75;
+    text-decoration:none;
+    margin-top:2px;
+    transition:opacity 0.2s ease;
+  }
+
+  .powered-by:hover{
+    opacity:1;
+  }
+
   @media (max-height: 620px){
     .bio{display:none;}
     .avatar-wrap{width:74px; height:74px;}
@@ -346,6 +360,7 @@
 
     <footer>
       <span class="cro">Rio de Janeiro <span class="dot">•</span> CRO-RJ 45928</span>
+      <a class="powered-by" href="https://primeplace.net" target="_blank" rel="noopener">Powered by Primeplace</a>
     </footer>
 
   </main>
